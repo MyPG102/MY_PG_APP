@@ -1,0 +1,23 @@
+server:
+  port: 7662
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/PgData_QA
+    username: postgres
+    password: Postgresql
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+
+springdoc:
+  swagger-ui:
+    enabled: true
+  api-docs:
+    enabled: true
+
+logging:
+  level:
+    root: INFO

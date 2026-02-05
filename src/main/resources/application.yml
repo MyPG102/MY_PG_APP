@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: com.myPG
+
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+jwt:
+  secret: mypg_super_secure_secret_key_which_is_at_least_64_characters_long
+  expiration: 86400000   # 24 hours in ms
